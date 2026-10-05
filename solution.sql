@@ -1,11 +1,25 @@
- create database NUMBERS;
-use NUMBERS;
+create database TWONNUMBERS;
+use TWONUMBERS;
+CREATE TABLE SumNumbers (
+Number1 NUMBER,
+Number2 NUMBER
+);
+
+INSERT INTO SumNumbers VALUES (10, 20);
+
+COMMIT;
+
+SET SERVEROUTPUT ON;
+
 DECLARE
 A NUMBER := 10;
 B NUMBER := 20;
 C NUMBER;
 BEGIN
 C := A + B;
+
+DBMS_OUTPUT.PUT_LINE('First Number = ' || A);
+DBMS_OUTPUT.PUT_LINE('Second Number = ' || B);
 DBMS_OUTPUT.PUT_LINE('Sum = ' || C);
 END;
 /
