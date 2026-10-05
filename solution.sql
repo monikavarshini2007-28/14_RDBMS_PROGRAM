@@ -1,4 +1,5 @@
-
+ create database NUMBERS;
+use NUMBERS;
 DECLARE
 A NUMBER := 10;
 B NUMBER := 20;
